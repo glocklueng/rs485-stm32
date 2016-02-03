@@ -27,8 +27,6 @@ static volatile uint8_t rx2_flag = 0;
 static volatile char rx2_char = 0;
 
 static volatile char uart_2_rx_buffer[UART_MAX_SIZE] = {'\0'};
-static volatile char uart_2_tx_buffer[UART_MAX_SIZE] = {'\0'};
-static volatile uint8_t tx2_cnt = 0;
 static volatile uint16_t uart2_n_bytes = 0;
 
 //usart3 variables

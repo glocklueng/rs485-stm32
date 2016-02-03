@@ -1,7 +1,6 @@
 #include "../headers/system_setup.h"
 
-int main(void)
-{
+int main(void) {
 	system_setup();
 
 	while(1){
@@ -9,6 +8,5 @@ int main(void)
 		uart_2_echo_uart_3();
 		//timer_2_delay(1000);
 	}
-
 	return 0;
 }

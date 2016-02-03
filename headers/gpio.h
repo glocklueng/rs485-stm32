@@ -76,12 +76,19 @@ void gpio_c_clk_enable(void);
 void gpio_d_clk_enable(void);
 void gpio_e_clk_enable(void);
 void gpio_setup(GPIO_TypeDef *Target_GPIO, GPIO_Struct *GPIO_Setup);				// Initiates port pins.
-void gpio_init(GPIO_TypeDef *GPIO, uint32_t pins, uint32_t pinMode, uint32_t pinOutputType, uint32_t pinPullType, uint32_t speed);
+void gpio_init(	GPIO_TypeDef *GPIO,
+				uint32_t pins,
+				uint32_t pinMode,
+				uint32_t pinOutputType,
+				uint32_t pinPullType,
+				uint32_t speed);
 void gpio_write_pin(GPIO_TypeDef *Target_GPIO, uint16_t targetPin, uint8_t pinState);	// Sets pin state.
 void gpio_set_pin(GPIO_TypeDef *Port, uint16_t pin);									// Sets pin state to high.
 void gpio_clear_pin(GPIO_TypeDef *Port, uint16_t pin);									// Sets pin state to low.
 void gpio_toggle_pin(GPIO_TypeDef *Target_GPIO, uint16_t targetPin);					// Toggles pin state.
 int gpio_read_pin(GPIO_TypeDef *Target_GPIO, uint16_t targetPin);						// Reads pin state.
-int gpio_debounce_input(GPIO_TypeDef *Target_GPIO, uint16_t GPIO_Target_Pin, uint32_t debounceTime);
+int gpio_debounce_input(GPIO_TypeDef *Target_GPIO,
+						uint16_t GPIO_Target_Pin,
+						uint32_t debounceTime);
 
 #endif /*GPIO_H_*/

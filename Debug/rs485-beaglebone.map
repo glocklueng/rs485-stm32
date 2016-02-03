@@ -3878,9 +3878,6 @@ Discarded input sections
                 0x00000000       0x1c ./src/uart.o
  .text.uart_3_echo
                 0x00000000       0x28 ./src/uart.o
- .bss.uart_2_tx_buffer
-                0x00000000      0x100 ./src/uart.o
- .bss.tx2_cnt   0x00000000        0x1 ./src/uart.o
  .debug_macro   0x00000000      0x898 ./src/uart.o
  .debug_macro   0x00000000       0x2e ./src/uart.o
  .debug_macro   0x00000000       0x28 ./src/uart.o
@@ -4935,7 +4932,7 @@ END GROUP
 .debug_pubnames
  *(.debug_pubnames)
 
-.debug_info     0x00000000     0x419f
+.debug_info     0x00000000     0x4178
  *(.debug_info .gnu.linkonce.wi.*)
  .debug_info    0x00000000      0x100 ./system/src/newlib/_exit.o
  .debug_info    0x00000100      0x125 ./system/src/newlib/_sbrk.o
@@ -4952,7 +4949,7 @@ END GROUP
  .debug_info    0x000029cd       0xdb ./src/main.o
  .debug_info    0x00002aa8      0x2f0 ./src/system_setup.o
  .debug_info    0x00002d98      0x8bc ./src/timer.o
- .debug_info    0x00003654      0xb4b ./src/uart.o
+ .debug_info    0x00003654      0xb24 ./src/uart.o
 
 .debug_abbrev   0x00000000     0x1413
  *(.debug_abbrev)
@@ -5033,7 +5030,7 @@ END GROUP
  .debug_frame   0x00000f88       0x34 /home/marko/Programming/arm-gcc/gcc-arm-none-eabi-4_9-2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7e-m/libgcc.a(_divdi3.o)
  .debug_frame   0x00000fbc       0x30 /home/marko/Programming/arm-gcc/gcc-arm-none-eabi-4_9-2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7e-m/libgcc.a(_udivdi3.o)
 
-.debug_str      0x00000000    0xa1f4e
+.debug_str      0x00000000    0xa1f35
  *(.debug_str)
  .debug_str     0x00000000     0x5ebf ./system/src/newlib/_exit.o
                                0x6031 (size before relaxing)
@@ -5065,8 +5062,8 @@ END GROUP
                               0x9e4ca (size before relaxing)
  .debug_str     0x000a1688      0x59d ./src/timer.o
                               0x9e855 (size before relaxing)
- .debug_str     0x000a1c25      0x329 ./src/uart.o
-                              0x9eb23 (size before relaxing)
+ .debug_str     0x000a1c25      0x310 ./src/uart.o
+                              0x9eb0a (size before relaxing)
 
 .debug_loc      0x00000000      0xf40
  *(.debug_loc)
